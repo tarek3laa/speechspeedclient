@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.media.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1000.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <Label fx:id="label" layoutX="400.0" layoutY="21.0" prefHeight="16.0" prefWidth="200.0" text="video 1" />
+        <MediaView fx:id="mediaView" fitHeight="700.0" fitWidth="970.0" layoutX="15.0" layoutY="81.0" />
+
+        <Button fx:id="doneButton" layoutX="449.0" layoutY="925.0" mnemonicParsing="false" onAction="#done" text="done" />
+        <Button fx:id="playButton" layoutX="420.0" layoutY="789.0" mnemonicParsing="false" onAction="#playVideo" text="play" />
+        <Button fx:id="prevButton" layoutX="300.0" layoutY="789.0" mnemonicParsing="false" onAction="#prevVideo" text="prev" />
+        <Button fx:id="pauseButton" layoutX="480.0" layoutY="789.0" mnemonicParsing="false" onAction="#pauseVideo" text="pause" />
+        <Button fx:id="nextButton" layoutX="610.0" layoutY="789.0" mnemonicParsing="false" onAction="#nextVideo" text="next" />
+        <RadioButton fx:id="video1" layoutX="244.0" layoutY="879.0" mnemonicParsing="false" selected="true" text="video 1">
+            <toggleGroup>
+                <ToggleGroup fx:id="videosGroup" />
+            </toggleGroup>
+        </RadioButton>
+
+        <RadioButton fx:id="video2" layoutX="330.0" layoutY="879.0" mnemonicParsing="false" text="video 2" toggleGroup="$videosGroup" />
+        <RadioButton fx:id="video3" layoutX="430.0" layoutY="879.0" mnemonicParsing="false" text="video 3" toggleGroup="$videosGroup" />
+        <RadioButton fx:id="video4" layoutX="530.0" layoutY="879.0" mnemonicParsing="false" text="video 4" toggleGroup="$videosGroup" />
+        <RadioButton fx:id="video5" layoutX="630.0" layoutY="879.0" mnemonicParsing="false" text="video 5" toggleGroup="$videosGroup" />
+
+        <RadioButton fx:id="video6" layoutX="730.0" layoutY="879.0" mnemonicParsing="false" text="video 6" toggleGroup="$videosGroup" visible="true" />
+    </children>
+</AnchorPane>

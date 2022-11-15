@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            prefHeight="400.0" prefWidth="600.0">
+
+    <children>
+        <Label fx:id="label" layoutX="400.0" layoutY="100.0" prefHeight="16.0" prefWidth="200.0"
+               text="enter your email"/>
+        <TextField fx:id="textField" layoutX="400.0" layoutY="200.0" prefHeight="16.0" prefWidth="200.0"
+                   text="email"></TextField>
+        <Button fx:id="submit" layoutX="400.0" layoutY="300.0" prefHeight="16.0" prefWidth="200.0" text="submit"
+                onAction="#submit"/>
+
+    </children>
+
+</AnchorPane>
