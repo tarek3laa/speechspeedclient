@@ -36,7 +36,7 @@ public class SubmitController {
                 .build();
 
         try {
-            HttpRequest request = HttpRequest.newBuilder(URI.create("http://127.0.0.1:5000")).POST(HttpRequest.BodyPublishers.ofString("" +
+            HttpRequest request = HttpRequest.newBuilder(URI.create("https://speechspeedtest.azurewebsites.net")).POST(HttpRequest.BodyPublishers.ofString("" +
                     "{\"email\":" + "\"" + textField.getText() + "\"," +
                     "\"selected_video\":" + "\"" + presenterName + "\"," +
                     "\"selected_speed\":" + "\"" + selectedSpeed + "\"}")).build();
